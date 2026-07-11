@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:#0d6efd !important;
+    padding:15px 0;
+}
+
+.navbar-brand{
+    color:#fff !important;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin-left:15px;
+}
+
+.nav-link:hover{
+    color:#ffd54f !important;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard{
+    padding:100px 0 60px;
+}
+
+.dashboard-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.dashboard-title h2{
+    color:#0d6efd;
+    font-size:38px;
+    font-weight:bold;
+}
+
+.dashboard-title p{
+    color:#666;
+}
+
+/* ================= RESULT CARDS ================= */
+
+.result-card{
+    background:#fff;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:.3s;
+    height:100%;
+}
+
+.result-card:hover{
+    transform:translateY(-6px);
+}
+
+.result-card i{
+    font-size:45px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.result-card h5{
+    color:#666;
+    margin-bottom:10px;
+}
+
+.result-card h3{
+    color:#28a745;
+    font-weight:bold;
+}
+
+/* ================= USER DETAILS ================= */
+
+.details-card{
+    background:#fff;
+    margin-top:40px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.details-card h3{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.details-card table{
+    width:100%;
+}
+
+.details-card td{
+    padding:12px;
+    border-bottom:1px solid #eee;
+}
+
+.details-card td:first-child{
+    font-weight:bold;
+    width:40%;
+}
+
+/* ================= HEALTH TIPS ================= */
+
+.tips-card{
+    background:#fff;
+    margin-top:40px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.tips-card h3{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.tips-card ul{
+    padding-left:20px;
+}
+
+.tips-card li{
+    margin-bottom:12px;
+    color:#555;
+}
+
+/* ================= BUTTON ================= */
+
+.back-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 25px;
+    background:#0d6efd;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#0b5ed7;
+    color:white;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .dashboard{
+        padding-top:80px;
+    }
+
+    .dashboard-title h2{
+        font-size:30px;
+    }
+
+    .result-card{
+        margin-bottom:20px;
+    }
+
+    .details-card,
+    .tips-card{
+        padding:20px;
+    }
+
+    .details-card td{
+        display:block;
+        width:100%;
+        border:none;
+        padding:8px 0;
+    }
+
+}
