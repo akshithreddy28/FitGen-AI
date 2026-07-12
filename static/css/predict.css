@@ -1,191 +1,367 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-    background:#f4f7fb;
+    background:#F8FAFC;
+    color:#1E293B;
+    overflow-x:hidden;
 }
 
-/* Navbar */
+/* ==========================
+   NAVBAR
+========================== */
 
 .navbar{
-    background:#0d6efd !important;
-    padding:15px 0;
+    background:#0F172A !important;
+    padding:16px 0;
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
 }
 
 .navbar-brand{
-    color:white !important;
+    color:#fff !important;
     font-size:28px;
-    font-weight:bold;
+    font-weight:700;
 }
 
 .nav-link{
-    color:white !important;
-    margin-left:15px;
+    color:#fff !important;
+    margin-left:18px;
+    transition:.3s;
+    font-weight:500;
 }
 
 .nav-link:hover{
-    color:#ffd54f !important;
+    color:#60A5FA !important;
 }
 
-/* Prediction Section */
+/* ==========================
+   PAGE SECTION
+========================== */
 
 .predict-section{
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:100px 20px;
+    padding:80px 20px;
 }
 
-/* Form Card */
+/* ==========================
+   FORM CARD
+========================== */
 
 .predict-card{
+
     width:100%;
-    max-width:700px;
-    background:white;
-    border-radius:15px;
-    padding:40px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    max-width:850px;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:45px;
+
+    box-shadow:0 15px 35px rgba(15,23,42,.08);
+
+    transition:.3s;
+
+}
+
+.predict-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 45px rgba(15,23,42,.12);
+
 }
 
 .predict-card h2{
+
     text-align:center;
-    color:#0d6efd;
-    margin-bottom:10px;
+
+    color:#0F172A;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
 }
 
 .predict-card p{
+
     text-align:center;
-    color:#666;
-    margin-bottom:30px;
+
+    color:#64748B;
+
+    font-size:17px;
+
+    margin-bottom:35px;
+
 }
 
-/* Labels */
+/* ==========================
+   FORM
+========================== */
+
+.form-row{
+
+    display:flex;
+
+    gap:22px;
+
+}
+
+.form-group{
+
+    flex:1;
+
+    margin-bottom:20px;
+
+}
 
 label{
-    font-weight:600;
-    margin-bottom:8px;
+
     display:block;
+
+    margin-bottom:8px;
+
+    color:#334155;
+
+    font-weight:600;
+
 }
 
-/* Inputs */
+label i{
+
+    color:#2563EB;
+
+    margin-right:8px;
+
+}
+
+/* ==========================
+   INPUTS
+========================== */
 
 input,
 select{
+
     width:100%;
-    padding:12px 15px;
-    margin-bottom:20px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    outline:none;
+
+    height:55px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    padding:0 18px;
+
     font-size:16px;
-    transition:0.3s;
+
+    background:#fff;
+
+    transition:.3s;
+
+}
+
+input::placeholder{
+
+    color:#94A3B8;
+
 }
 
 input:focus,
 select:focus{
-    border-color:#0d6efd;
-    box-shadow:0 0 8px rgba(13,110,253,0.2);
+
+    outline:none;
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 .2rem rgba(37,99,235,.15);
+
 }
 
-/* Two Column Layout */
-
-.form-row{
-    display:flex;
-    gap:20px;
-}
-
-.form-group{
-    flex:1;
-}
-
-/* Button */
+/* ==========================
+   BUTTON
+========================== */
 
 button{
+
     width:100%;
-    padding:15px;
-    border:none;
-    border-radius:8px;
-    background:#28a745;
+
+    margin-top:15px;
+
+    background:#2563EB;
+
     color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:12px;
+
     font-size:18px;
-    font-weight:bold;
+
+    font-weight:600;
+
     cursor:pointer;
-    transition:0.3s;
+
+    transition:.3s;
+
 }
 
 button:hover{
-    background:#218838;
-}
 
-/* Info Box */
+    background:#1D4ED8;
 
-.info-box{
-    margin-top:25px;
-    background:#eef5ff;
-    border-left:5px solid #0d6efd;
-    padding:15px;
-    border-radius:8px;
-}
+    transform:translateY(-3px);
 
-.info-box h5{
-    color:#0d6efd;
-    margin-bottom:10px;
-}
-
-.info-box ul{
-    margin-left:20px;
-}
-
-.info-box li{
-    margin-bottom:6px;
-    color:#555;
-}
-
-/* Footer */
-
-footer{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-    .predict-card{
-        padding:25px;
-    }
-
-    .form-row{
-        flex-direction:column;
-        gap:0;
-    }
-
-}
-label i{
-    color:#0d6efd;
-    margin-right:8px;
-}
-
-input::placeholder{
-    color:#999;
 }
 
 button i{
-    margin-right:8px;
+
+    margin-right:10px;
+
 }
+
+/* ==========================
+   INFO BOX
+========================== */
+
+.info-box{
+
+    margin-top:35px;
+
+    background:#EFF6FF;
+
+    border-left:5px solid #2563EB;
+
+    padding:22px;
+
+    border-radius:12px;
+
+}
+
+.info-box h5{
+
+    color:#0F172A;
+
+    margin-bottom:15px;
+
+    font-weight:700;
+
+}
+
+.info-box ul{
+
+    padding-left:20px;
+
+}
+
+.info-box li{
+
+    margin-bottom:10px;
+
+    color:#475569;
+
+    line-height:1.6;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    background:#0F172A;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+    margin-top:50px;
+
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+.predict-card,
+.info-box{
+
+    animation:fadeUp .7s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
 
 .predict-card{
-    transition:.3s;
+
+padding:30px;
+
 }
 
-.predict-card:hover{
-    box-shadow:0 12px 25px rgba(0,0,0,.15);
+.predict-card h2{
+
+font-size:28px;
+
+}
+
+.form-row{
+
+flex-direction:column;
+
+gap:0;
+
+}
+
+button{
+
+font-size:17px;
+
+}
+
 }
